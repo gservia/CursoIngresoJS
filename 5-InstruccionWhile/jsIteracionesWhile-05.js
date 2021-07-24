@@ -1,12 +1,22 @@
 /*
+Autor: Gabriel Servia
+WHILE Ejercicio 05
+Enunciado:
 Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+'f' para femenino, 'm' para masculino.
+*/
 function mostrar()
 {
 	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	sexoIngresado=prompt("Ingrese f para femenino ó m para masculino:");
 
+	while(sexoIngresado != "f" && sexoIngresado != "m")
+	{
+		
+		sexoIngresado=prompt("Vuelva a intentar! Solo ingrese la 'f' para femenino ó 'm' para masculino:");
 
+	}
 
-	txtIdSexo.value=sexoIngresado;
+	document.getElementById('txtIdSexo').value=sexoIngresado;
+
 }//FIN DE LA FUNCIÓN
